@@ -1,0 +1,56 @@
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: rgb(158, 158, 158);
+   font-weight: bold;
+}
+
+/* FORM */
+.formContainer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+}
+
+.labelForm {
+   font-weight: 100;
+   font-size: 18px;
+   margin: 5px 0;
+}
+
+.inputForm {
+   width: 250px;
+   padding: 10px;
+   font-size: 18px;
+}
+
+/* TODO LIST */
+.listContainer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 0;
+   gap: 5px;
+}
+
+.itemContainer {
+   width: 400px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   background-color: rgb(99, 99, 99);
+   list-style-type: none;
+   font-size: 18px;
+}
+
+.itemText {
+   margin-left: 20px;
+}
+
+.deleteIcon {
+   width: 45px;
+}
