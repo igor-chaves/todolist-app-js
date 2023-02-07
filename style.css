@@ -54,3 +54,11 @@
 .deleteIcon {
    width: 45px;
 }
+
+.display {
+   display: block;
+}
+
+.hide {
+   display: none;
+}
