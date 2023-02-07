@@ -11,18 +11,24 @@
    <div class="container">
       <h1>TODO LIST</h1>
       
-      <form class="formContainer">
+      <form data-js="searchForm" class="searchForm">
+         <label class="labelForm" for="input">Search item:</label>
+         <input class="inputForm" name="input" id="">
+      </form>
+
+      <form data-js="formContainer" class="formContainer">
          <label class="labelForm" for="input">Today I promise I will:</label>
          <input class="inputForm" name="input" id="" placeholder="Ex. study quantum physic">
       </form>
       
-      <ul class="listContainer">
-         <div class="itemContainer">
-            <li class="itemText">Make a nice portfolio</li>
+      <ul data-js="listContainer" class="listContainer">
+         <li class="itemContainer">
+            <span class="itemText">Make a nice portfolio</span>
             <img class="deleteIcon" src="./trash.svg">
-         </div>
+         </li>
       </ul>
-
    </div>
+
+   <script src="./app.js"></script>
 </body>
 </html>
