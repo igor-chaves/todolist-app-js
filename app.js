@@ -9,9 +9,15 @@ searchForm.addEventListener("submit", e => {
    const inputValue = e.target.input.value
    const todoListArray = Array.from(listContainer.children)
 
-   todoListArray.filter(item => {
-      item.innerText === inputValue ? item.classList.add("display") : item.classList.remove("hide")
-   })
+   // get an array with ALL items that not matches the value from input
+   todoListArray
+      .filter(item => !item.innerText.includes(inputValue))
+      .forEach(item => item.classList.add("hide"))
+   
+   // get an array with ALL items that matches the value from input
+   todoListArray
+      .filter(item => item.innerText.includes(inputValue))
+      .forEach(item => item.classList.remove("hide"))
 })
 
 
