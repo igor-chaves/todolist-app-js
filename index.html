@@ -11,7 +11,7 @@
    <div class="container">
       <h1>TODO LIST</h1>
       
-      <form data-js="searchForm" class="searchForm">
+      <form data-js="searchForm" class="searchForm" autocomplete="off">
          <label class="labelForm" for="input">Search item:</label>
          <input class="inputForm" name="input" id="">
       </form>
@@ -22,9 +22,9 @@
       </form>
       
       <ul data-js="listContainer" class="listContainer">
-         <li class="itemContainer">
+         <li data-item="Make a nice portfolio" class="itemContainer">
             <span class="itemText">Make a nice portfolio</span>
-            <img class="deleteIcon" src="./trash.svg">
+            <img data-delete-icon="Make a nice portfolio" class="deleteIcon" src="./trash.svg">
          </li>
       </ul>
    </div>
