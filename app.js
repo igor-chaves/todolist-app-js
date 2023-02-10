@@ -1,9 +1,9 @@
+const searchInput = document.querySelector('[data-js="searchContainer"] input')
 const todoForm = document.querySelector('[data-js="formContainer"]')
-const searchForm = document.querySelector('[data-js="searchForm"] input')
 const listContainer = document.querySelector('[data-js="listContainer"]')
 
 
-searchForm.addEventListener("input", e => {
+searchInput.addEventListener("input", e => {
    e.preventDefault()
 
    const inputValue = e.target.value.trim().toLowerCase()
@@ -39,8 +39,8 @@ listContainer.addEventListener("click", e => {
    const clickedElement = e.target
 
    if (clickedElement.dataset.deleteIcon) {
+      // get a certain element e remove from DOM.
+      // the removed element is the one that has the same value in the data attribute as the trash data attribue's value
       document.querySelector(`[data-item="${clickedElement.dataset.deleteIcon}"]`).remove()
    }
-   // delete element that contains "deleteIcon" as class
-   // if (clickedElement.classList.contains("deleteIcon")) clickedElement.parentElement.remove()
 })
