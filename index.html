@@ -11,10 +11,10 @@
    <div class="container">
       <h1>TODO LIST</h1>
       
-      <form data-js="searchForm" class="searchForm" autocomplete="off">
+      <div data-js="searchContainer" class="searchContainer">
          <label class="labelForm" for="input">Search item:</label>
-         <input class="inputForm" name="input">
-      </form>
+         <input class="inputForm" name="input" autocomplete="off">
+      </div>
 
       <form data-js="formContainer" class="formContainer">
          <label class="labelForm" for="input">Today I promise I will:</label>
@@ -24,11 +24,11 @@
       <ul data-js="listContainer" class="listContainer">
          <li data-item="Make a nice portfolio" class="itemContainer">
             <span class="itemText">Make a nice portfolio</span>
-            <img data-delete-icon="Make a nice portfolio" src="./trash.svg">
+            <img data-delete-icon="Make a nice portfolio" class="deleteIcon" src="./trash.svg">
          </li>
       </ul>
    </div>
 
-   <script src="./app2.js"></script>
+   <script src="./app.js"></script>
 </body>
 </html>

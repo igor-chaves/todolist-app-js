@@ -1,4 +1,4 @@
-const searchInput = document.querySelector('[data-js="searchForm"] input')
+const searchInput = document.querySelector('[data-js="searchContainer"] input')
 const todoForm = document.querySelector('[data-js="formContainer"]')
 const listContainer = document.querySelector('[data-js="listContainer"]')
 
