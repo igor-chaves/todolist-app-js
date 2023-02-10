@@ -51,8 +51,9 @@
    margin-left: 20px;
 }
 
-.deleteIcon {
+img[data-delete-icon] {
    width: 45px;
+   cursor: pointer;
 }
 
 .display {
